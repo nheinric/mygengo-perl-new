@@ -346,7 +346,7 @@ structure, without process/as_group.
 =cut
 sub determineTranslationCost { 
     my ($self, $jobs) = @_;
-    return $self->_signAndSend('POST', '/translate/job', $jobs);
+    return $self->_signAndSend('POST', '/translate/service/quote', $jobs);
 }
 
 =head2 updateTranslationJob( $id, \%status_obj )
